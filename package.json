@@ -1,0 +1,35 @@
+{
+  "name": "bilibili-get",
+  "version": "0.0.1",
+  "description": "Bilibili video downloader.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "bilibili-get": "./bin/bilibili-get"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kamikat/bilibili-get.git"
+  },
+  "keywords": [
+    "bilibili",
+    "flv"
+  ],
+  "author": "kamikat <kamikat@banana.moe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamikat/bilibili-get/issues"
+  },
+  "homepage": "https://github.com/kamikat/bilibili-get#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bilibili-playurl": "^1.0.0",
+    "chalk": "^2.3.1",
+    "co": "^4.6.0",
+    "commander": "^2.12.2",
+    "debug": "^3.1.0",
+    "qs": "^6.5.1"
+  }
+}
