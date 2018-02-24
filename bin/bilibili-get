@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+var debug = require('debug').debug('bilibili:cli');
+var process = require('process');
+var program = require('commander');
+var pkginfo = require('../package.json');
+var __main__ = require('../lib');
+var co = require('co');
+
+program
+  .usage('[options] <url>')
+  .option('-q, --quality [value]', 'Set video quality [0]', '0')
+  .option('-C, --cookie [value]', 'Set cookie string')
+  .option('-d, --dry-run', 'Run the program without any download')
+  .option('-s, --silent', 'Suppress video quality output')
+  .version(pkginfo.version)
+  .parse(process.argv);
+
+if (program.args.length !== 1) {
+  program.outputHelp();
+  process.exit(1);
+}
+
+co(__main__(program.args[0], program)).then(() => {
+  debug('process finished.');
+}).catch((err) => {
+  debug(err);
+  console.error(`ERROR: ${err.message}`);
+  process.exit(1);
+});
+
+
