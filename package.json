@@ -4,7 +4,7 @@
   "description": "Bilibili video downloader.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint ."
   },
   "bin": {
     "bilibili-get": "./bin/bilibili-get"
