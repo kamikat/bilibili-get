@@ -26,6 +26,12 @@ if (!commandExists('aria2c')) {
   process.exit(1);
 }
 
+if (!commandExists('ffmpeg')) {
+  console.error('ERROR: ffmpeg: command not found.')
+  console.error('Please download and install ffmpeg with package manager or follow installation\ninstructions from ffmpeg project <https://ffmpeg.org/>.')
+  process.exit(1);
+}
+
 if (program.args.length !== 1) {
   program.outputHelp();
   process.exit(1);
