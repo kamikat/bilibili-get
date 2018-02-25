@@ -11,6 +11,7 @@ program
   .usage('[options] <url>')
   .option('-o, --output [pattern]', 'Set output pattern', 'av%(aid)s %(title)s%(#index&&"\\(")s%(index)s%(#index&&"\\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s')
   .option('-q, --quality [value]', 'Set video quality', '0')
+  .option('-l, --list-formats', 'List available format/quality for video(s)')
   .option('-C, --cookie [value]', 'Set cookie string')
   .option('-d, --dry-run', 'Run the program without any download')
   .option('-s, --silent', 'Suppress video quality output')
