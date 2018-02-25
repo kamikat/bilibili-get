@@ -9,7 +9,8 @@ var co = require('co');
 
 program
   .usage('[options] <url>')
-  .option('-q, --quality [value]', 'Set video quality [0]', '0')
+  .option('-o, --output [pattern]', 'Set output pattern', 'av%(aid)s %(title)s%(#index&&"\\(")s%(index)s%(#index&&"\\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s')
+  .option('-q, --quality [value]', 'Set video quality', '0')
   .option('-C, --cookie [value]', 'Set cookie string')
   .option('-d, --dry-run', 'Run the program without any download')
   .option('-s, --silent', 'Suppress video quality output')
