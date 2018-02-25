@@ -14,7 +14,7 @@ program
   .option('-f, --output-format [format]', 'set merged output format [flv/mkv/mp4]')
   .option('-q, --quality [value]', 'set video quality', '0')
   .option('-l, --list-formats', 'list available format/quality for video(s)')
-  .option('-C, --cookie [value]', 'set cookie string')
+  .option('-C, --cookie [cookieString]', 'set cookie string')
   .option('-d, --dry-run', 'run the program without any download')
   .option('-s, --silent', 'suppress video quality output')
   .version(pkginfo.version)
