@@ -28,6 +28,7 @@
     "bilibili-playurl": "^1.0.2",
     "chalk": "^2.3.1",
     "co": "^4.6.0",
+    "command-exists": "^1.2.2",
     "commander": "^2.12.2",
     "debug": "^3.1.0",
     "lodash": "^4.17.5",

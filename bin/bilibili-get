@@ -4,6 +4,7 @@ var debug = require('debug').debug('bilibili:cli');
 var process = require('process');
 var program = require('commander');
 var pkginfo = require('../package.json');
+var commandExists = require('command-exists').sync;
 var __main__ = require('../lib');
 var co = require('co');
 
@@ -17,6 +18,12 @@ program
   .option('-s, --silent', 'Suppress video quality output')
   .version(pkginfo.version)
   .parse(process.argv);
+
+if (!commandExists('aria2c')) {
+  console.error('ERROR: aria2c: command not found.')
+  console.error('Please download and install aria2 with package manager or follow installation\ninstructions on <https://aria2.github.io/>.')
+  process.exit(1);
+}
 
 if (program.args.length !== 1) {
   program.outputHelp();
