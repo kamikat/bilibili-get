@@ -26,11 +26,13 @@ bilibili-get supports downloading video from following type of urls:
 ## Installation
 
 ```
-npm i -g bilibili-get
+npm install -g bilibili-get
 ```
 
-bilibili-get depends on [aria2](https://aria2.github.io) and [ffmpeg](https://ffmpeg.org) to work.
-They can be easily installed with a package manager. For [Homebrew](https://brew.sh) users:
+bilibili-get uses [aria2](https://aria2.github.io) and [ffmpeg](https://ffmpeg.org) for downloading and video segment merging.
+They can be easily installed with a package manager.
+
+For [Homebrew](https://brew.sh) users:
 
 ```
 brew install ffmpeg aria2
