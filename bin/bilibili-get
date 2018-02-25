@@ -21,14 +21,14 @@ program
   .parse(process.argv);
 
 if (!commandExists('aria2c')) {
-  console.error('ERROR: aria2c: command not found.')
-  console.error('Please download and install aria2 with package manager or follow installation\ninstructions on <https://aria2.github.io/>.')
+  console.error('ERROR: aria2c: command not found.');
+  console.error('Please download and install aria2 with package manager or follow installation\ninstructions on <https://aria2.github.io/>.');
   process.exit(1);
 }
 
 if (!commandExists('ffmpeg')) {
-  console.error('ERROR: ffmpeg: command not found.')
-  console.error('Please download and install ffmpeg with package manager or follow installation\ninstructions from ffmpeg project <https://ffmpeg.org/>.')
+  console.error('ERROR: ffmpeg: command not found.');
+  console.error('Please download and install ffmpeg with package manager or follow installation\ninstructions from ffmpeg project <https://ffmpeg.org/>.');
   process.exit(1);
 }
 
