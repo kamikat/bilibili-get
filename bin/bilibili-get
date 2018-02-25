@@ -10,13 +10,13 @@ var co = require('co');
 
 program
   .usage('[options] <url>')
-  .option('-o, --output [pattern]', 'Set output pattern', 'av%(aid)s %(title)s%(#index&&"\\(")s%(index)s%(#index&&"\\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s')
-  .option('-f, --output-format [format]', 'Set merged output format [flv/mkv/mp4]')
-  .option('-q, --quality [value]', 'Set video quality', '0')
-  .option('-l, --list-formats', 'List available format/quality for video(s)')
-  .option('-C, --cookie [value]', 'Set cookie string')
-  .option('-d, --dry-run', 'Run the program without any download')
-  .option('-s, --silent', 'Suppress video quality output')
+  .option('-o, --output [pattern]', 'set output pattern', 'av%(aid)s %(title)s%(#index&&"\\(")s%(index)s%(#index&&"\\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s')
+  .option('-f, --output-format [format]', 'set merged output format [flv/mkv/mp4]')
+  .option('-q, --quality [value]', 'set video quality', '0')
+  .option('-l, --list-formats', 'list available format/quality for video(s)')
+  .option('-C, --cookie [value]', 'set cookie string')
+  .option('-d, --dry-run', 'run the program without any download')
+  .option('-s, --silent', 'suppress video quality output')
   .version(pkginfo.version)
   .parse(process.argv);
 
