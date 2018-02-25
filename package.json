@@ -38,5 +38,8 @@
     "sanitize-filename": "^1.6.1",
     "sprintf-js": "^1.1.1",
     "tmp-promise": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1"
   }
 }
