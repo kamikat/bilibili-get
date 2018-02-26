@@ -1,6 +1,7 @@
 # bilibili-get
 
 [![Build Status](https://travis-ci.org/kamikat/bilibili-get.svg?branch=master)](https://travis-ci.org/kamikat/bilibili-get)
+[![Coverage Status](https://coveralls.io/repos/github/kamikat/bilibili-get/badge.svg?branch=master)](https://coveralls.io/github/kamikat/bilibili-get?branch=master)
 [![npm version](https://badge.fury.io/js/bilibili-get.svg)](https://badge.fury.io/js/bilibili-get)
 
 youtube-dl like command-line tool resolving & downloading media files from bilibili.
