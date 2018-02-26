@@ -34,7 +34,6 @@
     "lodash": "^4.17.5",
     "mkdirp-promise": "^5.0.1",
     "mz": "^2.7.0",
-    "qs": "^6.5.1",
     "sanitize-filename": "^1.6.1",
     "sprintf-js": "^1.1.1",
     "tmp-promise": "^1.0.4"
