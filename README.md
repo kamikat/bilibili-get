@@ -20,12 +20,12 @@ bilibili-get supports downloading video from following type of urls:
 | User-uploaded Video (multipart) |    ✓     | `https://www.bilibili.com/video/av1041170`              |
 | User-uploaded Video (multipart) |          | `https://www.bilibili.com/video/av1041170/index_5.html` |
 | Movie Bangumi                   |          | `https://www.bilibili.com/bangumi/play/ss12364/`        |
-| TV Bangumi (A)                  |    ✓     | `http://bangumi.bilibili.com/anime/5796`                |
-| Bangumi Episode (A)             |          | `http://bangumi.bilibili.com/anime/5786/play#100367`    |
+| TV Bangumi (A)                  |    ✓     | `https://bangumi.bilibili.com/anime/5796`               |
+| Bangumi Episode (A)             |          | `https://bangumi.bilibili.com/anime/5786/play#100367`   |
 | TV Bangumi (B)                  |    ✓     | `https://www.bilibili.com/bangumi/play/ss5796`          |
 | Bangumi Episode (B1)            |          | `https://www.bilibili.com/bangumi/play/ep100611`        |
 | Bangumi Episode (B2)            |          | `https://www.bilibili.com/bangumi/play/ss21769#173345`  |
-| Redirect to Bilibili            |          |                                                         |
+| Redirect to Bilibili            |          | `https://acg.tv/av106`                                  |
 
 ## Installation
 
