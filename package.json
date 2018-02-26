@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/kamikat/bilibili-get#readme",
   "dependencies": {
-    "axios": "^0.18.0",
     "bilibili-playurl": "^1.0.2",
     "chalk": "^2.3.1",
     "co": "^4.6.0",
@@ -34,6 +33,8 @@
     "lodash": "^4.17.5",
     "mkdirp-promise": "^5.0.1",
     "mz": "^2.7.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
     "sanitize-filename": "^1.6.1",
     "sprintf-js": "^1.1.1",
     "tmp-promise": "^1.0.4"
