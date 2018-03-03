@@ -15,6 +15,7 @@ program
   .option('-q, --quality [value]', 'set video quality', '0')
   .option('-l, --list-formats', 'list available format/quality for video(s)')
   .option('-C, --cookie [cookieString]', 'set cookie string')
+  .option('-O, --download-options [key=value]', 'set extra aria2c command-line options', (el, l) => [ ...l, el  ], [])
   .option('-d, --dry-run', 'run the program without any download')
   .option('-s, --silent', 'suppress video quality output')
   .version(pkginfo.version)
