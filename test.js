@@ -1,4 +1,4 @@
-var { plan, pass } = require('tap');
+var { plan, pass, ok } = require('tap');
 
 var co = require('co');
 var main = require('./lib');
@@ -11,7 +11,7 @@ var options = {
 
 co(function* () {
 
-  plan(10);
+  plan(11);
 
   yield main('https://www.bilibili.com/video/av106', options);
   pass('get user-uploaded video');
@@ -42,6 +42,12 @@ co(function* () {
 
   yield main('http://acg.tv/av106', options);
   pass('get link redirects to bilibili');
+
+  try {
+    yield main('http://acg.tv/av1267', options);
+  } catch(e) {
+    ok(e.message.startsWith('articleError: authentication required'), 'display user-friendly error message');
+  }
 
 });
 
