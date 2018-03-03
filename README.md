@@ -56,15 +56,16 @@ Usage: bilibili-get [options] <url>
 
 Options:
 
-  -o, --output [pattern]        set output pattern (default: av%(aid)s %(title)s%(#index&&"\(")s%(index)s%(#index&&"\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s)
-  -f, --output-format [format]  set merged output format [flv/mkv/mp4]
-  -q, --quality [value]         set video quality (default: 0)
-  -l, --list-formats            list available format/quality for video(s)
-  -C, --cookie [value]          set cookie string
-  -d, --dry-run                 run the program without any download
-  -s, --silent                  suppress video quality output
-  -V, --version                 output the version number
-  -h, --help                    output usage information
+  -o, --output [pattern]              set output pattern (default: av%(aid)s %(title)s%(#index&&"\(")s%(index)s%(#index&&"\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s)
+  -f, --output-format [format]        set merged output format [flv/mkv/mp4]
+  -q, --quality [value]               set video quality (default: 0)
+  -l, --list-formats                  list available format/quality for video(s)
+  -C, --cookie [cookieString]         set cookie string
+  -O, --download-options [key=value]  set extra aria2c command-line options (default: )
+  -d, --dry-run                       run the program without any download
+  -s, --silent                        suppress video quality output
+  -V, --version                       output the version number
+  -h, --help                          output usage information
 ```
 
 The `-o` flag accepts an output template string in [python string formatting method](https://docs.python.org/2/library/stdtypes.html#string-formatting).
