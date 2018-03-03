@@ -85,35 +85,40 @@ And some of the variables are:
 
 ### Examples
 
-Get video quality/format id:
+#### List video quality/format id
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -l
 ```
 
-Download 720P video files:
+#### Download video file of 720p quality
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -q 64
 ```
 
-By default, bilibili-get detects format of output video. Use `-f` to set the merged video format.
-For example, merge video segments to `.mkv` file:
+#### Set video format for merged video
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -f mkv
 ```
 
-Download bangumi:
+#### Download bangumi
 
 ```
 bilibili-get -o 'av%(aid)s - %(title)s/%(index)s%(#index_title&&" - ")s%(index_title)s.%(ext)s' -f mkv https://www.bilibili.com/bangumi/play/ss1512
 ```
 
-Use a premium account for better quality:
+#### Use premium account
 
 ```
 bilibili-get -C 'DedeUserID=XXXXXX; DedeUserID__ckMd5=b199851b45c91f32; sid=XXXXXXXX; SESSDATA=cf33becc%2C1241112410%2A332c1323;' -q 112 -f mkv https://www.bilibili.com/bangumi/play/ss1512
+```
+
+#### Download file(s) with 5 connections
+
+```
+bilibili-get https://www.bilibili.com/video/av18182135 -O split=5 -O max-connection-per-server=5
 ```
 
 ## License
