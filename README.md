@@ -87,40 +87,48 @@ And some of the variables are:
 
 ### Examples
 
-#### List video quality/format id
+#### List video quality/format
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -l
 ```
 
-#### Download video file of 720p quality
+#### Quality
 
 ```
-bilibili-get https://www.bilibili.com/video/av18182135 -q 64
+bilibili-get https://www.bilibili.com/video/av18182135 -q 64  # 720P
+bilibili-get https://www.bilibili.com/video/av18182135 -q 80  # 1080P
+bilibili-get https://www.bilibili.com/video/av18182135 -q 112 # 1080P 4Kbps
 ```
 
-#### Set video format for merged video
+#### Merge parts to MKV file
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -f mkv
 ```
 
-#### Download bangumi
+#### Bangumi
 
 ```
 bilibili-get -o 'av%(aid)s - %(title)s/%(index)s%(#index_title&&" - ")s%(index_title)s.%(ext)s' -f mkv https://www.bilibili.com/bangumi/play/ss1512
 ```
 
-#### Use premium account
+#### Cookie of premium account
 
 ```
 bilibili-get -C 'DedeUserID=XXXXXX; DedeUserID__ckMd5=b199851b45c91f32; sid=XXXXXXXX; SESSDATA=cf33becc%2C1241112410%2A332c1323;' -q 112 -f mkv https://www.bilibili.com/bangumi/play/ss1512
 ```
 
-#### Download file(s) with 5 connections
+#### Multiple connection download
 
 ```
 bilibili-get https://www.bilibili.com/video/av18182135 -O split=5 -O max-connection-per-server=5
+```
+
+#### Download speed limit
+
+```
+bilibili-get https://www.bilibili.com/video/av18182135 -O max-download-limit=300K
 ```
 
 ## License
