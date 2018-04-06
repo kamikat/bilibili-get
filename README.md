@@ -25,6 +25,7 @@ bilibili-get supports downloading video from following type of urls:
 | TV Bangumi (B)                  |    ✓     | `https://www.bilibili.com/bangumi/play/ss5796`          |
 | Bangumi Episode (B1)            |          | `https://www.bilibili.com/bangumi/play/ep100611`        |
 | Bangumi Episode (B2)            |          | `https://www.bilibili.com/bangumi/play/ss21769#173345`  |
+| TV Bangumi (C)                  |    ✓     | `https://www.bilibili.com/bangumi/media/md8892/`        |
 | URL Redirect                    |          | `https://acg.tv/av106`                                  |
 
 ## Installation
