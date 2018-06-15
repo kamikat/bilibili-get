@@ -1,6 +1,6 @@
 {
   "name": "bilibili-get",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Bilibili video downloader.",
   "main": "./lib/index.js",
   "scripts": {
