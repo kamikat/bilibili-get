@@ -12,7 +12,7 @@ program
   .usage('[options] <url>')
   .option('-o, --output [pattern]', 'set output pattern', 'av%(aid)s %(title)s%(#index&&"\\(")s%(index)s%(#index&&"\\)")s%(#index_title&&" ")s%(index_title)s.%(ext)s')
   .option('-f, --output-format [format]', 'set merged output format [flv/mkv/mp4]')
-  .option('-q, --quality [value]', 'set video quality', '0')
+  .option('-q, --quality [value]', 'set video quality', '112')
   .option('-l, --list-formats', 'list available format/quality for video(s)')
   .option('-C, --cookie [cookieString]', 'set cookie string')
   .option('-O, --download-options [key=value]', 'set extra aria2c command-line options', (el, l) => [ ...l, el  ], [])
