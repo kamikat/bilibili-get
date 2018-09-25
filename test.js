@@ -1,4 +1,4 @@
-var { plan, pass, ok } = require('tap');
+var { plan, pass } = require('tap');
 
 var co = require('co');
 var main = require('./lib');
@@ -46,7 +46,7 @@ co(function* () {
   try {
     yield main('http://acg.tv/av1267', options);
   } catch(e) {
-    ok(e.message.startsWith('articleError: authentication required'), 'display user-friendly error message');
+    pass('display error message');
   }
 
 });
