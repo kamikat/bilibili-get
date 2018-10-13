@@ -11,7 +11,7 @@ var options = {
 
 co(function* () {
 
-  plan(11);
+  plan(12);
 
   yield main('https://www.bilibili.com/video/av106', options);
   pass('get user-uploaded video');
@@ -21,6 +21,9 @@ co(function* () {
 
   yield main('https://www.bilibili.com/video/av8042104/index_1.html', options);
   pass('get user-uploaded video (multipart) p2');
+
+  yield main('https://www.bilibili.com/video/av25432066/?p=39', options);
+  pass('get user-uploaded video (multipart) p3');
 
   yield main('https://www.bilibili.com/bangumi/play/ss12364/', options);
   pass('get movie bangumi');
