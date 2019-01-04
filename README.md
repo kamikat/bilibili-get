@@ -30,6 +30,8 @@ bilibili-get supports downloading video from following type of urls:
 
 ## Installation
 
+Install via NPM:
+
 ```
 npm install -g bilibili-get
 ```
@@ -42,6 +44,8 @@ For [Homebrew](https://brew.sh) users:
 ```
 brew install ffmpeg aria2
 ```
+
+For Linux/Windows users, make sure to have **aria2 &gt; 1.23.0** installed.
 
 ## Usage
 
