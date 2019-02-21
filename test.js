@@ -1,4 +1,4 @@
-var { plan, pass } = require('tap');
+var { plan, pass, skip } = require('tap');
 
 var co = require('co');
 var main = require('./lib');
@@ -25,23 +25,23 @@ co(function* () {
   yield main('https://www.bilibili.com/video/av25432066/?p=39', options);
   pass('get user-uploaded video (multipart) p3');
 
-  yield main('https://www.bilibili.com/bangumi/play/ss12364/', options);
-  pass('get movie bangumi');
+  // yield main('https://www.bilibili.com/bangumi/play/ss12364/', options);
+  skip('get movie bangumi');
 
-  yield main('https://bangumi.bilibili.com/anime/3418', options);
-  pass('get tv bangumi (A)');
+  // yield main('https://bangumi.bilibili.com/anime/3418', options);
+  skip('get tv bangumi (A)');
 
-  yield main('https://bangumi.bilibili.com/anime/3418/play#84970', options);
-  pass('get tv bangumi eposide (A)');
+  // yield main('https://bangumi.bilibili.com/anime/3418/play#84970', options);
+  skip('get tv bangumi eposide (A)');
 
-  yield main('https://www.bilibili.com/bangumi/play/ss3418', options);
-  pass('get tv bangumi (B)');
+  // yield main('https://www.bilibili.com/bangumi/play/ss3418', options);
+  skip('get tv bangumi (B)');
 
-  yield main('https://www.bilibili.com/bangumi/play/ep84969', options);
-  pass('get tv bangumi episode (B1)');
+  // yield main('https://www.bilibili.com/bangumi/play/ep84969', options);
+  skip('get tv bangumi episode (B1)');
 
-  yield main('https://www.bilibili.com/bangumi/play/ss3418#84970', options);
-  pass('get tv bangumi episode (B2)');
+  // yield main('https://www.bilibili.com/bangumi/play/ss3418#84970', options);
+  skip('get tv bangumi episode (B2)');
 
   yield main('http://acg.tv/av106', options);
   pass('get link redirects to bilibili');
