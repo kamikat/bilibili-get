@@ -13,20 +13,20 @@ co(function* () {
 
   plan(12);
 
-  yield main('https://www.bilibili.com/video/av106', options);
-  pass('get user-uploaded video');
+  // yield main('https://www.bilibili.com/video/av106', options);
+  skip('get user-uploaded video');
 
-  yield main('https://www.bilibili.com/video/av8042104/', options);
-  pass('get user-uploaded video (multipart)');
+  // yield main('https://www.bilibili.com/video/av8042104/', options);
+  skip('get user-uploaded video (multipart)');
 
-  yield main('https://www.bilibili.com/video/av8042104/index_1.html', options);
-  pass('get user-uploaded video (multipart) p2');
+  // yield main('https://www.bilibili.com/video/av8042104/index_1.html', options);
+  skip('get user-uploaded video (multipart) p2');
 
-  yield main('https://www.bilibili.com/video/av25432066/?p=39', options);
-  pass('get user-uploaded video (multipart) p3');
+  // yield main('https://www.bilibili.com/video/av25432066/?p=39', options);
+  skip('get user-uploaded video (multipart) p3');
 
-  // yield main('https://www.bilibili.com/bangumi/play/ss12364/', options);
-  skip('get movie bangumi');
+  yield main('https://www.bilibili.com/bangumi/play/ss12364/', options);
+  pass('get movie bangumi');
 
   // yield main('https://bangumi.bilibili.com/anime/3418', options);
   skip('get tv bangumi (A)');
@@ -43,8 +43,8 @@ co(function* () {
   // yield main('https://www.bilibili.com/bangumi/play/ss3418#84970', options);
   skip('get tv bangumi episode (B2)');
 
-  yield main('http://acg.tv/av106', options);
-  pass('get link redirects to bilibili');
+  // yield main('http://acg.tv/av106', options);
+  skip('get link redirects to bilibili');
 
   try {
     yield main('http://acg.tv/av1267', options);
