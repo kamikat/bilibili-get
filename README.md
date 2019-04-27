@@ -12,6 +12,8 @@ youtube-dl like command-line tool resolving & downloading media files from bilib
 - Auto-merging video segments
 - Premium account bangumi (with `-C` option)
 
+**WARNING** using proxy with cookie may get your account banned since March 2019.
+
 bilibili-get supports downloading video from following type of urls:
 
 | URL                             | Playlist | Example                                                 |
@@ -65,6 +67,7 @@ Options:
   -f, --output-format [format]        set merged output format [flv/mkv/mp4]
   -q, --quality [value]               set video quality (default: 0)
   -l, --list-formats                  list available format/quality for video(s)
+  -x, --http-proxy [server]           set HTTP proxy for metadata extractor
   -C, --cookie [cookieString]         set cookie string
   -O, --download-options [key=value]  set extra aria2c command-line options (default: )
   -d, --dry-run                       run the program without any download
