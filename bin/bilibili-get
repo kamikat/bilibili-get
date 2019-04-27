@@ -14,6 +14,7 @@ program
   .option('-f, --output-format [format]', 'set merged output format [flv/mkv/mp4]')
   .option('-q, --quality [value]', 'set video quality', '112')
   .option('-l, --list-formats', 'list available format/quality for video(s)')
+  .option('-x, --http-proxy [server]', 'set HTTP proxy for metadata extractor')
   .option('-C, --cookie [cookieString]', 'set cookie string')
   .option('-O, --download-options [key=value]', 'set extra aria2c command-line options', (el, l) => [ ...l, el  ], [])
   .option('-d, --dry-run', 'run the program without any download')
