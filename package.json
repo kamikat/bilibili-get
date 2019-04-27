@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/kamikat/bilibili-get#readme",
   "dependencies": {
-    "bilibili-playurl": "^1.1.0",
+    "bilibili-playurl": "^1.2.0",
     "chalk": "^2.3.1",
     "co": "^4.6.0",
     "command-exists": "^1.2.8",
